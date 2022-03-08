@@ -1,0 +1,898 @@
+[
+  {
+    "uri": "features/login.feature",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "login-feature;existing-user-login-successfully",
+        "keyword": "Scenario",
+        "name": "existing user login successfully",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user is on register screen",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/register.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1230475000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"name\" on register screen",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/register.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37994000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"email\" on register screen",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/register.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 552215000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"password\" on register screen",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/register.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 536924000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"confirm password\" on register screen",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/register.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 553728000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click register button on register screen",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/register.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 583927000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "user should be successfully register",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/register.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 651104000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user navigate to login screen from register screen",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3216611000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user on Login screen",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 569221000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"existing email\" on login screen",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42353000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"existing password\" on login screen",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551820000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 585889000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "user account details should be displayed",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/login.rb:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021493000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5287612000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;2",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 27,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 436000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 521962000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"invalid email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46039000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"existing password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 575041000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1237457000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"invalid email\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96823000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5059031000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;3",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 588315000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"existing email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52976000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"blank password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555545000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1192328000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"blank password\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97989000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5119883000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;4",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 29,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 526143000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"blank email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41201000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"existing password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 580110000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1221662000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"blank email\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105567000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4970111000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;5",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562218000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"wrong email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44248000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"existing password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 568013000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 627896000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"wrong email\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 674488000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5021279000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;6",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 535000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 567885000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"existing email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45393000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"wrong password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 586178000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 583624000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"wrong password\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 687431000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4950235000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;7",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 32,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 578028000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"blank email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48462000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"blank password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551490000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1160663000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"blank email or password\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89010000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5033455000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;error-message-should-be-displayed-for-invalid-email;;8",
+        "keyword": "Scenario Outline",
+        "name": "error message should be displayed for invalid email",
+        "description": "",
+        "line": 33,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 432000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user on Login screen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 567385000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user enter \"wrong email\" on login screen",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38170000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user enter \"wrong password\" on login screen",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563404000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "user click button login on login screen",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 629391000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "error message for \"wrong email or password\" should be displayed",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 665474000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5255709000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

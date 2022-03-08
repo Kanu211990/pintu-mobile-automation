@@ -1,0 +1,9 @@
+  existing_customer:
+    email: 'test@gmail.com'
+    password: 'test123'
+    name: 'Test'
+    invalid_email: 'test'
+    wrong_email: 'test1@gmail.com'
+    wrong_password: 'test1'
+    error_message_invalid_email_or_password: 'Enter Valid Email'
+    error_message_wrong_email_or_password: 'Wrong Email or Password'

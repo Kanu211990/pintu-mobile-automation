@@ -1,0 +1,9 @@
+register_details:
+  error_message_email_exist: 'Email Already Exists'
+  message_success: 'Registration Successful'
+  name: 'Test'
+  email: 'test@gmail.com'
+  invalid_email: 'test1'
+  password: 'test123'
+  confirm_password1: 'test1234'
+  confirm_password: 'test123'
